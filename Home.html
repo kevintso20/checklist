@@ -1,0 +1,261 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">Checklist</a>
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+                </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Google+</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">How to star</a></li>
+                            <li><a href="#">Tutorial</a></li>
+                            <li><a href="#">Important Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron" style="background:rgba(0,0,0,0.3) !important;">
+            <h1 class="text-center" style="color:#e6ba98">My Checklist</h1>
+            <p style="color:#e6ba98">
+                Τhis site is an attempt to learn how to use bootstrap. The reason for the site's existence is to remember what to do and to have the goals of the day written somewhere (that it's up to me to learn to learn this language)
+            </p>
+        </div>
+    </div>
+    <!-- add task pop pup menu -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-2 " style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col1_name" style="color: white">Task Name</a></h3>
+                <p id="col1_infos" style="color: white">Infos</p>
+                <a id="col1_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col1_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+            <div class="col-md-2 col-md-offset-1" style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col2_name" style="color: white">Task Name</a></h3>
+                <p id="col2_infos" style="color: white">Infos</p>
+                <a id="col2_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col2_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+            <div class="col-md-2 col-md-offset-1" style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col3_name" style="color: white">Task Name</a></h3>
+                <p id="col3_infos" style="color: white">Infos</p>
+                <a id="col3_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col3_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+                <div class="col-md-2 col-md-offset-1 " style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col4_name" style="color: white">Task Name</a></h3>
+                <p id="col4_infos" style="color: white">Infos</p>
+                <a id="col4_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col4_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-2" style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col5_name" style="color: white">Task Name</a></h3>
+                <p id="col5_infos" style="color: white">Infos</p>
+                <a id="col5_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col5_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+            <div class="col-md-2 col-md-offset-1" style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col6_name" style="color: white">Task Name</a></h3>
+                <p id="col6_infos" style="color: white">Infos</p>
+                <a id="col6_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col6_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+            <div class="col-md-2 col-md-offset-1" style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col7_name" style="color: white">Task Name</a></h3>
+                <p id="col7_infos" style="color: white">Infos</p>
+                <a id="col7_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col7_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+            <div class="col-md-2 col-md-offset-1" style="background-color:rgba(0,0,0,0.4)">
+
+                <h3><a href="#taskDetails" class="viewTask" data-toggle="modal" id="col8_name" style="color: white">Task Name</a></h3>
+                <p id="col8_infos" style="color: white">Infos</p>
+                <a id="col8_add_task" href=".addTask" class="btn btn-default taskBtn" style="opacity:0.85" data-toggle="modal">Add Task</a>
+                <a id="col8_Edit" class="btn btn-default endBtn" style="opacity:0.85">End </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contact to me pop pup menu -->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Contact To me</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Contact to us.We enjoy helping peapole and make your day as best we can.
+                    </p>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="name">Your Name</label>
+                            <div class="col-md-10">
+                                <input id="contactName" type="text" class="form-control" placeholder="Your name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="email">Your Email</label>
+                            <div class="col-md-10">
+                                <input id="contactEmail" type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="message">Message</label>
+                            <div class="col-md-10">
+                                <textarea id="contactMessage" type="text" class="form-control" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a id="contactClose" href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a id="contactSent" href="#" class="btn btn-primary" data-dismiss="modal">Sent</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add task pop pup menu -->
+    <div id="task" class="modal fade addTask" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">Add task</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Fill the fields</p>
+                </div>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="taskName">Name</label>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="taskName" placeholder="Task Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="taskName">Description</label>
+                        <div class="col-md-9">
+                            <textarea type="text" class="form-control" id="taskDescription" placeholder="Description" rows="6"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <a id="taskClose" href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <a id="saveTask" href="#" class="btn btn-primary" data-dismiss="modal">Done</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- show task pop pup menu -->
+    <div class="modal fade" id="taskDetails" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="headerTask" class="text-center">Task Name</h3>
+                </div>
+                <div class="modal-body">
+                    <p id="paragraph"></p>
+                    <textarea id="editTaskTextArea" type="text" class="form-control text-center hidden" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" id="taskDetailsClose" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-default" id="taskDetailsEdit">Edit</a>
+                    <a href="" class="btn btn-primary" id="taskDetailsDone" data-dismiss="modal">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="navbar navbar-inverse navbar-fixed-bottom " style="background : rgba(8,8,8,0.4) !important; ">
+        <div class="container">
+            <div class="row" style="">
+                <div class="nav navbar-nav navbar-left" style="color: white;margin-top: 10px;">
+                    <div id="footer" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <p id="copyright" property="dc:rights">&copy;
+                            <span property="dc:dateCopyrighted">2018</span>
+                            <span property="dc:publisher">Example Corporation</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="nav navbar-nav navbar-right " style="white-space: normal; display: block; float: left;">
+                    <div class="col-sm-2">
+                        <a href="https://plus.google.com/discover" target="_blank"><i  class="fa fa-google-plus"  aria-hidden="true" style="font-size: 3.5rem; color: red;  margin-top:8px;"></i></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="https://facebook.com" target="_blank"><i  class="fa fa-facebook"  aria-hidden="true" style="font-size: 3.5rem; color: #3b5998;  margin-top:8px;"></i></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="https://twitter.com" target="_blank"><i  class="fa fa-twitter"  aria-hidden="true" style="font-size: 3.5rem; color: rgb(0,172,237);  margin-top:8px;  padding-right: 2.5em;"></i></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="https://www.instagram.com/" target="_blank"> <i id="instagram" class="fa fa-instagram"  aria-hidden="true" style="font-size: 3.5rem;margin-top:8px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.rawgit.com/janl/mustache.js/master/mustache.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="myModularTry.js" type="text/javascript"></script>
+</body>
+
+</html>
